@@ -1,0 +1,321 @@
+// Fonts
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+// Colors
+$charcoal:   #222222;
+$slate:      #333333;
+$darkBlue:   #2c3e50;
+$hero:       #577ECB;
+$lightBlue:  #47beff;
+$tealGreen:  #00ffff;
+$teal:       #00e8ff;
+$cyan:       #00BCD4;
+$greenSea:   #16a085;
+$turquoise:  #1abc9c;
+$emerald:    #2ecc71;
+$nephritis:  #27ae60;
+$gray:       #cccccc;
+$offWhite:   #eeeeee;
+$white:      #ffffff;
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: $darkBlue;
+    display: flex;
+    padding: 10px 20px;
+
+    h1 {
+        font-size: 30px;
+        transition: all 0.1s ease-in-out;
+    }
+    h1:hover {
+        font-size: 35px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    ul#links {
+        display: flex;
+        flex: 1 1 0;
+        justify-content: flex-end;
+
+        li {
+            margin-left: 15px;
+            display: flex;
+            flex: 0 0 10%;
+            list-style-type: none;
+            background-color: $emerald;
+            border-radius: 2px;
+            transition: all 0.07s ease-in-out;
+        }
+        li:hover {
+            background-color: rgba(12, 206, 107, .9);
+            a {
+                color: $white;
+            }
+        }
+    }
+    a {
+        margin: 0 auto;
+        text-decoration: none;
+        text-align: center;
+        color: $offWhite;
+        font-weight: bold;
+        display: block;
+        align-self: center;
+    }
+}
+
+#hero {
+    background-color: $hero;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+
+    h1{
+        color: $white;
+        font-size: 50px;
+    }
+    p{
+        font-size: 25px;
+        color: $gray;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+hr {
+    width: 65%;
+    margin: 0 auto;
+}
+
+#about{
+    text-align: center;
+    vertical-align: middle;
+    background: $offWhite;
+    padding: 40px 0;
+
+    h2 {
+        color: $greenSea;
+        font-size: 60px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: $slate;
+        opacity: 0.3;
+    }
+    div {
+        flex: 1 1 33.33%;
+    }
+    section {
+        display: flex;
+        width: 65%;
+        margin: 40px auto;
+    }
+    p {
+        color: $slate;
+        font-size: 15px;
+        text-align: left;
+    }
+    #quotes {
+        display: flex;
+        flex-flow: column;
+
+        blockquote {
+            flex: 1 1 0;
+            color: $slate;
+            font-size: 18px;
+            font-weight: 100;
+        }
+    }
+    #profile img {
+        border-radius: 100%;
+        width: 80%;
+        margin: 0 auto;
+        border: 10px solid $greenSea;
+    }
+}
+
+#skills, #tools {
+    text-align: center;
+    vertical-align: middle;
+    background: $darkBlue;
+    padding: 40px 0;
+
+    h2 {
+        color: $greenSea;
+        font-size: 60px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: $white;
+        opacity: 0.5;
+    }
+    section {
+        display: flex;
+        width: 65%;
+        margin: 40px auto;
+    }
+    div.column {
+        flex: 1 1 50%;
+    }
+    div.item {
+        height: 40px;
+        display: flex;
+        padding: 10px;
+        color: $white;
+        transition: all 0.1s ease-in-out;
+
+        span.title {
+            text-align: left;
+            flex: 2 1 0;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        span.stars {
+            display: flex;
+            justify-content: space-between;
+            flex: 1 1 0;
+
+            img {
+                flex: 1 1 0;
+            }
+        }
+    }
+    div.item:hover {
+        background: $lightBlue;
+    }
+}
+
+#education, #certification {
+    text-align: center;
+    vertical-align: middle;
+    background: $offWhite;
+    padding: 40px 0;
+
+    h2 {
+        color: $greenSea;
+        font-size: 60px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: $slate;
+        opacity: 0.3;
+    }
+    section {
+        text-align: left;
+        width: 65%;
+        margin: 40px auto;
+    }
+    .education {
+        padding: 15px;
+        border-left: 5px solid $greenSea;
+    }
+    .content {
+        background: $turquoise;
+        font-size: 20px;
+        color: $white;
+        padding: 5px;
+        margin-top: 10px;
+        border-bottom: 5px solid $greenSea;
+    }
+}
+
+#projects {
+    text-align: center;
+    vertical-align: middle;
+    background: $charcoal;
+    padding: 40px 0;
+
+    h2 {
+        color: $white;
+        font-size: 60px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: $white;
+        opacity: 0.3;
+    }
+    section {
+        text-align: left;
+        width: 65%;
+        margin: 40px auto;
+
+        .project {
+            flex: 0 0 25%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#contact {
+    text-align: center;
+    vertical-align: middle;
+    background: $offWhite;
+    padding: 40px 0;
+
+    h2 {
+        color: $greenSea;
+        font-size: 60px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: $slate;
+        opacity: 0.3;
+    }
+    form {
+        width: 100%;
+        padding: 20px;
+        color: $white;
+    }
+    input {
+        padding: 10px;
+        background: $greenSea;
+        border: 0;
+        font-size: 20px;
+        color: $white;
+        margin: 0 auto;
+    }
+    input::placeholder {
+        color: $offWhite;
+    }
+    button{
+        padding: 10px;
+        background: $teal;
+        color: $white;
+        cursor: pointer;
+        font-size: 20px;
+        border: 0;
+    }
+}
+
+footer {
+    text-align: center;
+    vertical-align: middle;
+    background: $darkBlue;
+    padding: 40px 0;
+
+    h2 {
+        color: $greenSea;
+        font-size: 60px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: $slate;
+        opacity: 0.3;
+    }
+    section {
+        img {
+            width: 10%;
+        }
+    }
+}

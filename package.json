@@ -1,0 +1,24 @@
+{
+  "name": "devon",
+  "version": "1.0.0",
+  "description": "**The Problem**\r Create a simple functional personal website that will showcase me and my work and skills",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevonHogencamp/portfolioWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevonHogencamp/portfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/DevonHogencamp/portfolioWebsite#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
