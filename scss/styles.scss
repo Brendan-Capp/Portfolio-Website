@@ -4,8 +4,10 @@
 // Colors
 $charcoal:   #222222;
 $slate:      #333333;
-$darkBlue:   #2c3e50;
-$hero:       #577ECB;
+$darkImperialBlue: #00405F;
+$darkImperialBlue2: #0F436E;
+$metallicSeaweed: #047990;
+$oxfordBlue: #021845;
 $lightBlue:  #47beff;
 $tealGreen:  #00ffff;
 $teal:       #00e8ff;
@@ -15,7 +17,7 @@ $turquoise:  #1abc9c;
 $emerald:    #2ecc71;
 $nephritis:  #27ae60;
 $gray:       #cccccc;
-$offWhite:   #eeeeee;
+$midnightBlue: #182A72;
 $white:      #ffffff;
 
 
@@ -26,7 +28,7 @@ $white:      #ffffff;
 }
 
 nav {
-    background-color: $darkBlue;
+    background-color: $charcoal;
     display: flex;
     padding: 10px 20px;
 
@@ -65,21 +67,21 @@ nav {
         margin: 0 auto;
         text-decoration: none;
         text-align: center;
-        color: $offWhite;
+        color: $white;
         font-weight: bold;
         display: block;
         align-self: center;
     }
 }
 
-#hero {
-    background-color: $hero;
+#welcome {
+    background-color: $oxfordBlue;
     text-align: center;
     vertical-align: middle;
     line-height: 70px;
 
     h1{
-        color: $white;
+        color: $gray;
         font-size: 50px;
     }
     p{
@@ -99,11 +101,11 @@ hr {
 #about{
     text-align: center;
     vertical-align: middle;
-    background: $offWhite;
+    background: $midnightBlue;
     padding: 40px 0;
 
     h2 {
-        color: $greenSea;
+        color: $gray;
         font-size: 60px;
         font-weight: 100;
     }
@@ -120,7 +122,7 @@ hr {
         margin: 40px auto;
     }
     p {
-        color: $slate;
+        color: $gray;
         font-size: 15px;
         text-align: left;
     }
@@ -130,7 +132,7 @@ hr {
 
         blockquote {
             flex: 1 1 0;
-            color: $slate;
+            color: $gray;
             font-size: 18px;
             font-weight: 100;
         }
@@ -146,11 +148,11 @@ hr {
 #skills, #tools {
     text-align: center;
     vertical-align: middle;
-    background: $darkBlue;
+    background: $darkImperialBlue;
     padding: 40px 0;
 
     h2 {
-        color: $greenSea;
+        color: $gray;
         font-size: 60px;
         font-weight: 100;
     }
@@ -170,7 +172,7 @@ hr {
         height: 40px;
         display: flex;
         padding: 10px;
-        color: $white;
+        color: $gray;
         transition: all 0.1s ease-in-out;
 
         span.title {
@@ -197,11 +199,11 @@ hr {
 #education, #certification {
     text-align: center;
     vertical-align: middle;
-    background: $offWhite;
+    background: $darkImperialBlue2;
     padding: 40px 0;
 
     h2 {
-        color: $greenSea;
+        color: $gray;
         font-size: 60px;
         font-weight: 100;
     }
@@ -231,11 +233,11 @@ hr {
 #projects {
     text-align: center;
     vertical-align: middle;
-    background: $charcoal;
+    background: $metallicSeaweed;
     padding: 40px 0;
 
     h2 {
-        color: $white;
+        color: $gray;
         font-size: 60px;
         font-weight: 100;
     }
@@ -260,33 +262,17 @@ hr {
 #contact {
     text-align: center;
     vertical-align: middle;
-    background: $offWhite;
+    background: $charcoal;
     padding: 40px 0;
 
     h2 {
-        color: $greenSea;
+        color: $gray;
         font-size: 60px;
         font-weight: 100;
     }
     hr {
         border-color: $slate;
         opacity: 0.3;
-    }
-    form {
-        width: 100%;
-        padding: 20px;
-        color: $white;
-    }
-    input {
-        padding: 10px;
-        background: $greenSea;
-        border: 0;
-        font-size: 20px;
-        color: $white;
-        margin: 0 auto;
-    }
-    input::placeholder {
-        color: $offWhite;
     }
     button{
         padding: 10px;
@@ -295,27 +281,5 @@ hr {
         cursor: pointer;
         font-size: 20px;
         border: 0;
-    }
-}
-
-footer {
-    text-align: center;
-    vertical-align: middle;
-    background: $darkBlue;
-    padding: 40px 0;
-
-    h2 {
-        color: $greenSea;
-        font-size: 60px;
-        font-weight: 100;
-    }
-    hr {
-        border-color: $slate;
-        opacity: 0.3;
-    }
-    section {
-        img {
-            width: 10%;
-        }
     }
 }
